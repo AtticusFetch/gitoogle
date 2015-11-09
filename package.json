@@ -1,0 +1,19 @@
+{
+  "name": "gitoogle",
+  "version": "1.0.0",
+  "description": "git google-ish",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AtticusFetch/gitoogle.git"
+  },
+  "author": "I.I.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AtticusFetch/gitoogle/issues"
+  },
+  "homepage": "https://github.com/AtticusFetch/gitoogle#readme"
+}

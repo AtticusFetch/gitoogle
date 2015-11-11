@@ -1,3 +1,2 @@
-/**
- * Created by Ivan_Iankovskyi on 11/9/2015.
- */
+import angular from 'angular';
+const ngModule = angular.module('app', []);

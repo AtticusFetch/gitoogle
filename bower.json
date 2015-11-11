@@ -1,0 +1,19 @@
+{
+  "name": "gitoogle",
+  "version": "0.0.0",
+  "homepage": "https://github.com/AtticusFetch/gitoogle",
+  "authors": [
+    "Ivan Iankovskyi <Ivan_Iankovskyi@epam.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7"
+  }
+}

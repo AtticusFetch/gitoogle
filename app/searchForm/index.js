@@ -25,8 +25,7 @@ class searchFormController {
 
     submit() {
         this.gitSearchService.search(this.getRequestParams())
-            .success(data => {this.results = data;
-                console.log(data);})
+            .success(data => {this.results = data;})
             .error(er => {this.results = er});
     }
 }

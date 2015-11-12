@@ -1,8 +1,10 @@
-<form>
-    <label for="searchQuery">Search for: </label>
-    <input id="searchQuery" ng-model="vm.query" type="text"/>
-    <label for="language">Language: </label>
-    <input id="language" ng-model="vm.language" type="text"/>
-    <button type="submit" ng-click="vm.submit()">Search</button>
-    {{vm.results}}
-</form>
+    <form>
+        <label for="searchQuery">Search for: </label>
+        <input id="searchQuery" ng-model="vm.query" type="text"/>
+        <button class="md-raised md-primary" type="submit" ng-click="vm.submit()">Search</button>
+    </form>
+    <ul>
+        <li ng-repeat="item in vm.results.items">
+            <a target="_blank" href={{item.html_url}}>{{item.name}}</a>
+        </li>
+    </ul>

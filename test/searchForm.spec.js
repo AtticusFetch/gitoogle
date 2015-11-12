@@ -10,8 +10,7 @@ describe('Search Form', function () {
         inject(function ($controller, $injector) {
             sut = $controller('searchFormController');
             gitService = $injector.get('gitSearchService');
-            sut.query = 'Tetris';
-            sut.language = 'JavaScript';
+            sut.query = 'Tetris + language: JavaScript';
             expectedParams = {
                 q: 'Tetris',
                 language: 'JavaScript'
@@ -20,7 +19,9 @@ describe('Search Form', function () {
     });
 
     it('should form request params', function () {
-        expect(sut.getRequestParams()).toEqual(expectedParams);
+        sut.query = 'Tetris + language: JavaScript';
+        var result = sut.getRequestParams();
+        expect(result).toEqual(expectedParams);
     });
 
     it('should call gitAPI service on submit', function () {
@@ -35,5 +36,5 @@ describe('Search Form', function () {
         });
         sut.submit();
         expect(gitService.search).toHaveBeenCalledWith(expectedParams);
-    })
+    });
 });

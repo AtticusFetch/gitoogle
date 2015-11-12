@@ -1,5 +1,4 @@
 # gitoogle
-git google-ish
 1. git clone this
 2. npm install webpack webpack-dev-server -g
 3. npm install
@@ -9,3 +8,4 @@ git google-ish
 to run tests:
 1. install karma globally
 2. karma start
+git google-ish

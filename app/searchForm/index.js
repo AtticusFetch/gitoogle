@@ -14,10 +14,14 @@ class searchFormController {
             if (subParams.length > 1) {
                 let trimmedParams = subParams.map(Function.prototype.call, String.prototype.trim);
                 Object.defineProperty(parsedParams, trimmedParams[0], {
-                    value: trimmedParams[1]
+                    value: trimmedParams[1],
+                    enumerable: true
                 });
             } else {
-                Object.defineProperty(parsedParams, 'q', {value: parameter});
+                Object.defineProperty(parsedParams, 'q', {
+                    value: parameter,
+                    enumerable: true
+                });
             }
         });
         return parsedParams;
